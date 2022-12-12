@@ -1,0 +1,148 @@
+.vr-games-items-list {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 40px 40px;
+
+    margin: 30px 40px 35px 40px;
+}
+
+.vr-games-items-list::before {
+    position: absolute;
+
+    content: "";
+
+    width: 70%;
+    height: 100%;
+
+    right: 70%;
+    bottom: -20%;
+
+    z-index: -1;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+.vr-games-items-list::after {
+    position: absolute;
+
+    content: "";
+
+    width: 70%;
+    height: 100%;
+
+    left: 70%;
+    bottom: -50%;
+
+    z-index: -1;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+
+.vr-games-item {
+    position: relative;
+
+    display: flex;
+
+    border-radius: 5px;
+}
+
+.vr-games__info-block {
+    position: absolute;
+
+    bottom: 0;
+    display: flex;
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    width: 100%;
+    height: 25%;
+
+    background: rgba(185, 54, 245, 0.25);
+    backdrop-filter: blur(55px);
+
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+    overflow: hidden;
+}
+
+.vr-games-item__game-block {
+    position: absolute;
+
+    top: 0;
+
+    margin: 5px 0 0 10px;
+
+    max-width: 40%;
+
+    line-height: 8px;
+}
+
+.vr-games-item__user-block {
+    position: absolute;
+
+    right: 0;
+    top: 0;
+
+    margin: 5px 10px 0 0;
+
+    max-width: 40%;
+
+    line-height: 7px;
+}
+
+.vr-games-item__game-name,
+.vr-games-item__user-name {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+    text-decoration-line: underline;
+}
+
+.vr-games-item__game-description,
+.vr-games-item__user-review {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 7px;
+}
+
+.vr-games-item__photo {
+    width: 230px;
+    height: 179px;
+
+    border-radius: 4px;
+}
+
+.vr-empty-games {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    height: 30vw;
+
+    margin: 0 35px 0 55px;
+}
+
+.vr-empty-games__title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 60px;
+
+    text-align: center;
+}

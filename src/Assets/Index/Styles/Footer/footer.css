@@ -1,0 +1,173 @@
+.footer-explore {
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 92%;
+
+    margin: 0 auto;
+
+    border-radius: 10px;
+
+    background: url(/src/Assets/Index/Images/Footer/footer-hands.svg);
+}
+
+.footer-form-block-content {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+
+    border-radius: 4px;
+}
+
+.footer-form-block-content__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 17px;
+
+    line-height: 23px;
+    letter-spacing: 0.4px;
+
+    margin-top: 29px;
+    margin-right: 15px;
+}
+
+.footer-form-block-content__description {
+    font-family: 'Oswald';
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 9px;
+
+    line-height: 11px;
+    letter-spacing: 1px;
+
+    margin-top: 25px;
+
+    width: 70%;
+
+    text-align: center;
+}
+
+.footer-form-block-inputs {
+    position: relative;
+
+    margin-top: 30px;
+    margin-bottom: 26px;
+}
+
+
+.footer-form-block-inputs__email {
+    position: relative;
+
+    background: linear-gradient(180deg, #AA14F0 -42.59%, rgba(0, 0, 0, 0) -42.59%, #CB8DE8 -42.58%, rgba(203, 143, 232, 0.18) 4.35%, rgba(151, 60, 68, 0.055) 99.99%, rgba(199, 137, 228, 0) 100%);
+
+    box-shadow: inset 0px -9px 16px rgb(255 255 255 / 3%);
+
+    backdrop-filter: blur(6px);
+
+    border: none;
+    border-radius: 4px;
+
+    height: 15px;
+    width: 54%;
+
+    padding-left: 11px;
+
+    margin-left: 5px;
+
+    color: white;
+}
+
+.footer-form-block-inputs__email::placeholder {
+    position: relative;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6px;
+
+    color: rgba(224, 163, 201, 0.56);
+
+}
+
+.footer-form-block-inputs__submit-email {
+    position: relative;
+
+    margin-left: 8px;
+    padding: 6px 27px;
+
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+
+    color: white;
+
+    border-radius: 4px;
+
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 5px;
+
+    border: none;
+}
+
+
+/* VSM */
+
+@media screen and (max-width: 575px) {
+
+    .footer-explore {
+        margin: 0 0 50px;
+
+        overflow: hidden;
+    }
+
+    .footer-form-block-content__title {
+        font-size: 4vw;
+        line-height: 1;
+
+        margin-top: 20px;
+    }
+
+    .footer-form-block-content__description {
+        font-size: 2.3vw;
+        line-height: 1;
+
+        max-width: 50%;
+
+        margin-top: 10px;
+    }
+
+    .footer-form-block-inputs {
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    .footer-form-block-content__email {
+        margin-bottom: 5px;
+    }
+
+    .footer-form-block-inputs__email {
+        width: 30%;
+
+        margin-left: 80px;
+    }
+
+    .footer-form-block-content__submit-email {
+        margin-left: 0;
+
+        border-radius: 2px;
+
+        padding: 6px 15px;
+    }
+
+}

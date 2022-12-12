@@ -1,0 +1,255 @@
+.company-culture {
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;
+    align-items: flex-start;
+
+    margin: 18px 180px 30px 180px;
+
+    z-index: 0;
+}
+
+.company-block-content {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+
+    max-width: 270px;
+}
+
+.company-block-content__title {
+    position: relative;
+
+    font-family: 'Orbitron';
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 18px;
+
+    line-height: 24px;
+    letter-spacing: 0.01em;
+
+    margin-bottom: 23px;
+}
+
+.company-block-content__description {
+    position: relative;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+
+    letter-spacing: 0.08em;
+}
+
+.advantage-block {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.advantage-block-content {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.advantages-item-sinrece {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    height: 40px;
+}
+
+.advantages-item-sinrece__picture {
+    width: 26px;
+    height: 26px;
+
+    padding-bottom: 5px;
+}
+
+.advantages-item-sinrece__text {
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+.advantages-item-stronger {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-items: center;
+
+    text-align: center;
+
+    height: 35px;
+}
+
+.advantages-item-stronger__picture {
+    width: 26px;
+    height: 26px;
+}
+
+.advantages-item-stronger__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+.advantages-item-simple {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    height: 35px;
+}
+
+.advantages-item-simple__picture {
+    width: 26px;
+    height: 26px;
+}
+
+.advantages-item-simple__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+.advantages-item-intelligent-risk {
+    position: relative;
+
+    display: flex;
+
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+
+    height: 40px;
+}
+
+.advantages-item-intelligent-risk__picture {
+    width: 26px;
+    height: 26px;
+}
+
+.advantages-item-intelligent-risk__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 7px;
+
+    letter-spacing: 1px;
+}
+
+
+/* VSM */
+
+@media screen and (max-width: 575px) {
+
+    .company-culture {
+        flex-direction: column;
+
+        align-items: center;
+
+        margin: 0;
+    }
+
+    .company-block-content__title {
+        font-size: 5vw;
+        text-align: center;
+    }
+
+    .company-block-content__heart-picture {
+        display: none;
+    }
+
+    .company-block-content {
+        max-width: 100%;
+
+        text-align: center;
+    }
+
+    .company-block-content__title {
+        margin-bottom: 20px;
+    }
+
+    .company-block-content__description {
+        font-size: 14px;
+
+        margin-bottom: 20px;
+    }
+
+    .advantages-item-simple__picture,
+    .advantages-item-intelligent-risk__picture,
+    .advantages-item-stronger__picture,
+    .advantages-item-sinrece__picture {
+        width: 56px;
+        height: 56px;
+
+        font-size: 10px;
+
+        padding-bottom: 5px;
+    }
+
+    .advantage-block-content {
+        gap: 60px
+    }
+
+    .first-block {
+        margin-right: 80px;
+    }
+}

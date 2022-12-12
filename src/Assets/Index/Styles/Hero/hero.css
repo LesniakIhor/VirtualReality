@@ -1,0 +1,334 @@
+.explore-section {
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    justify-content: space-evenly;
+
+    margin-top: 45px;
+
+    height: fit-content;
+
+    z-index: 0;
+}
+
+.explore-block-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    max-width: 40%;
+
+    margin: 75px 0 0 40px;
+}
+
+.explore-block-content__explore-vr {
+    position: relative;
+
+    width: fit-content;
+    height: fit-content;
+
+    font-family: 'Orbitron';
+    font-style: normal;
+
+    font-weight: 900;
+    font-size: 31px;
+
+    line-height: 43px;
+    letter-spacing: 0.015em;
+
+    margin-bottom: 21px;
+}
+
+.explore-block-content__explore-vr-description {
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 12px;
+
+    margin-bottom: 31px;
+
+    letter-spacing: 1px;
+}
+
+.explore-block-content__hero-buttons {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    width: 100%;
+
+    margin-bottom: 34px;
+}
+
+.button-invite-friend {
+    position: relative;
+
+    padding: 12px 14px;
+
+    color: white;
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 11px;
+
+    border-radius: 4px;
+}
+
+.button-explore-device {
+    position: relative;
+
+    padding: 12px 20px;
+
+    color: white;
+    background: transparent;
+
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 700;
+    font-size: 11px;
+}
+
+.explore-block-content__peoples-online {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    max-width: fit-content;
+}
+
+.people-photo-orange-girl {
+    position: relative;
+    z-index: 1;
+}
+
+.peoples-online__people-photo-white-girl {
+    position: relative;
+    z-index: 1;
+
+    margin-left: -6px;
+}
+
+.peoples-online__people-photo-yellow-girl {
+    position: relative;
+    z-index: 1;
+
+    margin-left: -6px;
+}
+
+.peoples-online__people-photo-red-man {
+    position: relative;
+    z-index: 1;
+
+    margin-left: -6px;
+}
+
+.peoples-online__people-online {
+    position: relative;
+    z-index: 1;
+
+    margin-left: 17px;
+    margin-bottom: 5px;
+
+    font-family: 'Inter';
+
+    font-style: normal;
+    font-weight: 600;
+
+    font-size: 10px;
+    line-height: 12px;
+
+    letter-spacing: 0.05em;
+}
+
+.cinematic-block-content {
+    position: relative;
+
+    transform: translate(-17px, -11px);
+}
+
+.explore-vr-girl__photo {
+    position: relative;
+    max-width: 100%;
+}
+
+.explore-vr-girl {
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+
+    top: 62%;
+    right: 3%;
+
+    align-items: center;
+}
+
+.explore-vr-girl__vr-reality-title {
+    font-family: 'Orbitron';
+    font-style: normal;
+
+    font-weight: 800;
+    font-size: 19px;
+
+    line-height: 25px;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 21px;
+}
+
+.explore-vr-girl__vr-line {
+    position: relative;
+
+    width: 37%;
+
+    margin: 0;
+}
+
+.explore-vr-girl__vr-reality-description {
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 11px;
+
+    line-height: 13px;
+
+    text-align: center;
+
+    max-width: 45%;
+
+    margin-top: 24px;
+}
+
+/* VSM */
+
+@media screen and (max-width: 575px) {
+    .explore-section {
+        position: relative;
+
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: nowrap;
+
+        align-items: center;
+        align-content: center;
+
+        margin: 0;
+    }
+
+    .explore-block-content {
+        max-width: 100%;
+
+        align-items: center;
+
+        text-align: center;
+
+        margin: 0;
+    }
+
+    .explore-block-content__explore-vr {
+        margin-top: 17px;
+        margin-bottom: 0;
+
+        font-size: 23px;
+    }
+
+    .explore-block-content__explore-vr-description {
+        font-size: 12px;
+        margin-bottom: 27px;
+    }
+
+    .explore-block-content__hero-buttons {
+        justify-content: center;
+
+        gap: 23px;
+
+        margin-bottom: 25px;
+    }
+
+    .button-invite-friend {
+        padding: 10px 13%;
+    }
+
+    .button-explore-device {
+        padding: 10px 16%;
+
+        background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        background-clip: text;
+
+    }
+
+    .button-explore-device::before {
+        position: absolute;
+
+        content: "";
+
+        width: 100%;
+        height: 100%;
+
+        background-color: transparent;
+
+        background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+
+        box-shadow: inset 0px 0px 0px 100vw black;
+
+        border: 1px solid transparent;
+        border-radius: 5px;
+
+        top: 0;
+        right: -1px;
+
+        z-index: -1;
+    }
+
+    .cinematic-block-content {
+        align-self: center;
+
+        transform: translateX(19px);
+
+        margin-top: 13px;
+    }
+
+    .explore-vr-girl__photo {
+        position: relative;
+        max-width: 90%;
+    }
+
+    .explore-vr-girl {
+        right: 12vmin;
+    }
+
+    .explore-vr-girl__vr-reality-title {
+        font-size: 3.8vmin;
+        line-height: 6.4vmin;
+
+        margin-bottom: 13px;
+    }
+
+    .explore-vr-girl__vr-reality-description {
+        font-size: 2.6vmin;
+        line-height: 3.5vmin;
+
+        margin-top: 19px;
+    }
+}

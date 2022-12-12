@@ -1,0 +1,24 @@
+.modalOverlay {
+    position: fixed;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    height: 100%;
+
+    backdrop-filter: blur(30px);
+
+    z-index: 2;
+}
+
+.modalContainer {
+
+    width: 300px;
+    height: fit-content;
+
+    background-color: black;
+    border: 2px solid rgba(255, 255, 255, .2)
+}

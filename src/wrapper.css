@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+Great+Primer+SC&family=Inter&family=Montserrat&family=Orbitron:wght@800&family=Oswald&family=Roboto:wght@700&display=swap');
+
+
+/* XL */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(220, 220, 220, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.15);
+
+    border-radius: 8px;
+}
+
+body {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+
+    background-color: black;
+    color: white;
+
+    transition: opacity .5s ease-in;
+}
+
+button {
+    border: none;
+}
+
+img {
+    user-select: none;
+}
+
+.wrapper {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    width: 850px;
+    margin: 0 auto;
+
+    overflow: hidden;
+
+    z-index: 1;
+
+    transition: filter .5s ease-in-out;
+}
+
+.modal-window-iframe {
+    position: fixed;
+
+    border: 2px solid rgba(220, 220, 220, 0.3);
+    border-radius: 8px;
+
+    opacity: 0;
+    transition: opacity .5s ease-in-out;
+
+    top: 20%;
+
+    z-index: 2;
+}
+
+.sign-in-window {
+    width: 30%;
+    height: 35%;
+}
+
+.add-new-card-window {
+    width: 40%;
+    height: 55%;
+}
+
+.modal-window__show {
+    opacity: 1;
+    transition: opacity .5s ease-in-out;
+}
+
+
+/* VSM */
+
+@media screen and (max-width: 575px) {
+    .sign-in-window {
+        width: 90%;
+        height: 75%;
+    }
+
+    .add-new-card-window {
+        width: 90%;
+        height: 45%;
+    }
+
+    main {
+        margin-bottom: 70px;
+    }
+}

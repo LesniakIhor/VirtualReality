@@ -1,0 +1,143 @@
+.exp-play-block {
+    position: relative;
+
+    display: flex;
+    flex-wrap: nowrap;
+
+    justify-content: center;
+
+    gap: 18px;
+
+    width: 100%;
+    height: 450px;
+}
+
+.girl-with-glasses__photo {
+    max-width: 43%;
+
+    align-self: flex-start;
+
+    margin-left: 55px;
+    margin-top: 14px;
+}
+
+.man-in-vr__photo {
+    max-width: 24.5%;
+
+    margin-top: 88px;
+    margin-right: 16px;
+}
+
+.new-experience-block-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    align-self: flex-end;
+
+    margin-left: 55px;
+    margin-bottom: 60px;
+}
+
+.new-experience-block-content__title {
+    font-family: 'Orbitron';
+    font-style: normal;
+
+    font-weight: 900;
+    font-size: 20px;
+
+    line-height: 33px;
+    letter-spacing: 0.02em;
+
+    margin-bottom: 21px;
+}
+
+.new-experience-block-content__description {
+    font-family: 'Inter';
+    font-style: normal;
+
+    font-weight: 400;
+    font-size: 12px;
+
+    line-height: 15px;
+
+    margin-bottom: 21px;
+}
+
+.new-experience-block-content__button {
+    position: relative;
+
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+
+    align-self: flex-start;
+
+    padding: 10px 19px;
+
+    border-radius: 4px;
+
+    color: white;
+
+    background: linear-gradient(99.99deg, #B936F5 -21.45%, #C64C85 100%, #F1005B 100%);
+}
+
+@media screen and (max-width: 575px) {
+    .exp-play-block {
+        height: 600px;
+
+        flex-wrap: wrap;
+
+        margin-bottom: 0;
+    }
+
+    .girl-with-glasses__photo {
+        margin-left: 0;
+        max-width: 35%;
+    }
+
+    .man-in-vr__photo {
+        margin-top: 60px;
+        margin-right: 0;
+
+        max-width: 36%;
+    }
+
+    .new-experience-block-content {
+        margin-left: 0;
+
+        text-align: center;
+        align-self: flex-start;
+
+        margin-bottom: 22px;
+
+        min-width: 99%;
+    }
+
+    .new-experience-block-content__title {
+        letter-spacing: 0.03em;
+
+        font-size: 18px;
+
+        margin-bottom: 10px;
+        margin-top: -3px;
+    }
+
+    .new-experience-block-content__description {
+        line-height: 15px;
+
+        max-width: 98%;
+
+        margin-bottom: 23px;
+    }
+
+    .new-experience-block-content__button {
+        align-self: flex-start;
+
+        margin: 0 auto;
+        padding: 10px 20%;
+    }
+}

@@ -1,0 +1,178 @@
+.ellipse-effect-header {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    bottom: -180px;
+    right: 35%;
+
+    z-index: -1;
+}
+
+.ellipse-effect-header::before {
+    position: inherit;
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+.ellipse-effect-cinematic-vr {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    left: 70%;
+
+    z-index: -1;
+}
+
+.ellipse-effect-cinematic-vr::before {
+    position: inherit;
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+.ellipse-effect-girl-with-glasses {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    left: -30%;
+    bottom: 40%;
+
+    z-index: -1;
+
+    overflow: hidden;
+}
+
+.ellipse-effect-girl-with-glasses::before {
+    position: inherit;
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+
+    overflow: hidden;
+}
+
+.ellipse-effect-mixed-headset {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    left: -20%;
+
+    z-index: -1;
+}
+
+.ellipse-effect-mixed-headset::before {
+    position: inherit;
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+.ellipse-effect-feedback {
+    position: absolute;
+
+    width: 600px;
+    height: 600px;
+
+    right: 0;
+
+    top: 0;
+
+    z-index: -1;
+}
+
+.ellipse-effect-feedback::before {
+    position: inherit;
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+.ellipse-effect-values-culture {
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    left: -15%;
+
+    bottom: 0;
+
+    z-index: -1;
+}
+
+.ellipse-effect-values-culture::before {
+    position: inherit;
+
+    content: "";
+
+    width: 100%;
+    height: 100%;
+
+    background: radial-gradient(37.26% 37.26% at 50% 50%, rgba(170, 20, 240, 0.31) 0%, rgba(170, 20, 240, 0) 100%);
+}
+
+
+/* VSM */
+
+@media screen and (max-width: 575px) {
+
+    .ellipse-effect-header {
+        right: 0;
+    }
+
+    .ellipse-effect-girl-with-glasses {
+        left: 0;
+        bottom: 0;
+    }
+
+    .ellipse-effect-feedback {
+        left: 0;
+    }
+
+    .ellipse-effect-cinematic-vr,
+    .ellipse-effect-mixed-headset,
+    .ellipse-effect-values-culture {
+        display: none;
+    }
+
+    /* Розкоментувати, якщо в body.css -> wrapper, "overflow: hidden" видалено/закоментовано (верхнє закоментувати) */
+
+    /* .ellipse-effect-header,
+    .ellipse-effect-girl-with-glasses,
+    .ellipse-effect-feedback,
+    .ellipse-effect-cinematic-vr,
+    .ellipse-effect-mixed-headset,
+    .ellipse-effect-values-culture {
+        display: none;
+    } */
+
+}
