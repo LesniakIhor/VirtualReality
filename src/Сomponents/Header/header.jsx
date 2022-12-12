@@ -13,14 +13,10 @@ import { NavLink } from "react-router-dom";
 
 export const Header = ({ userState, setUserState }) => {
 
-    const sitePathName = window.location.pathname;
-
     const checkAuthUser = checkAuth();
 
     const [mobileState, setMobileState] = useState(window.innerWidth <= 576);
-
     const [modalState, setModalState] = useState(false);
-
     const [menuState, setMenuState] = useState(false);
 
     const authUser = useCallback((e) => {
@@ -52,6 +48,7 @@ export const Header = ({ userState, setUserState }) => {
 
     useEffect(() => {
         window.addEventListener("resize", resizeHandler);
+
         return () => {
             window.removeEventListener("resize", resizeHandler)
         }
@@ -62,13 +59,13 @@ export const Header = ({ userState, setUserState }) => {
             <header className="head-section">
                 <div className="ellipse-effect-header"></div>
                 <nav className="head-nav">
-                    <div className="head-logo"> <NavLink className="head-logo__link" to="/">Light</NavLink> </div>
+                    <div className="head-logo"> <NavLink className="head-logo__link" to="/VirtualReality">Light</NavLink> </div>
                     <ul className="head-nav-buttons">
-                        <li className={sitePathName === "/" ? "nav-button button-home button-active" : "nav-button button-home"}>
-                            <NavLink className="nav-button__link" to="/">Home</NavLink>
+                        <li className={window.location.pathname === "/VirtualReality" ? "nav-button button-home button-active" : "nav-button button-home"}>
+                            <NavLink className="nav-button__link" to="/VirtualReality">Home</NavLink>
                         </li>
-                        <li className={sitePathName === "/games" ? "nav-button button-vr-games button-active" : "nav-button button-vr-games"}>
-                            <NavLink className="nav-button__link" to="/games">Games</NavLink>
+                        <li className={window.location.pathname === "/Games" ? "nav-button button-vr-games button-active" : "nav-button button-vr-games"}>
+                            <NavLink className="nav-button__link" to="/Games">Games</NavLink>
                         </li>
                         <li className="nav-button button-features">
                             <NavLink className="nav-button__link" to="#!">Features</NavLink>
@@ -107,7 +104,7 @@ export const Header = ({ userState, setUserState }) => {
         <header className="head-section">
             <div className="ellipse-effect-header"></div>
             <nav className="head-nav">
-                <div className="head-logo"> <NavLink className="head-logo__link" to="/">Light</NavLink> </div>
+                <div className="head-logo"> <NavLink className="head-logo__link" to="/VirtualReality">Light</NavLink> </div>
                 <div className={!menuState ? "hamburger-menu-icon" : "hamburger-menu-icon hamburger-menu-icon__active"} onClick={() => setMenuState(!menuState)}>
                     <div className="hamburger-menu-icon__line"></div>
                     <div className="hamburger-menu-icon__line"></div>

@@ -109,7 +109,7 @@
     position: absolute;
 
     bottom: 15%;
-    left: 15px;
+    left: 10px;
 
     width: 18px;
     height: 18px;
@@ -127,7 +127,7 @@
     line-height: 9px;
 
     bottom: 22px;
-    left: 40px;
+    left: 35px;
 }
 
 .feedback-item__client-pseudonym {
@@ -142,7 +142,7 @@
     line-height: 9px;
 
     bottom: 15px;
-    left: 40px;
+    left: 35px;
 
     color: #EB4468;
 }
