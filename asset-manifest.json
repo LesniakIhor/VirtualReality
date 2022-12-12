@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/VirtualReality/static/css/main.4f98807f.css",
-    "main.js": "/VirtualReality/static/js/main.bb6427df.js",
+    "main.js": "/VirtualReality/static/js/main.d2f6959a.js",
     "static/media/client-vani-pandey.svg": "/VirtualReality/static/media/client-vani-pandey.6cb9b5a5255c7b9f369feb98127d9abc.svg",
     "static/media/hero-girl-vr.svg": "/VirtualReality/static/media/hero-girl-vr.4fd2f693b80150d494599e6caf0fabd4.svg",
     "static/media/client-milly-singh.svg": "/VirtualReality/static/media/client-milly-singh.7f8d11a42ed35d54f705114fa936adfa.svg",
@@ -24,10 +24,10 @@
     "static/media/feedback-clients-arrow-right.svg": "/VirtualReality/static/media/feedback-clients-arrow-right.354e9a404167210e4dea18f54be54174.svg",
     "static/media/arrow-up.svg": "/VirtualReality/static/media/arrow-up.31e3071b0bf71cd27eff7dae7c1a2157.svg",
     "main.4f98807f.css.map": "/VirtualReality/static/css/main.4f98807f.css.map",
-    "main.bb6427df.js.map": "/VirtualReality/static/js/main.bb6427df.js.map"
+    "main.d2f6959a.js.map": "/VirtualReality/static/js/main.d2f6959a.js.map"
   },
   "entrypoints": [
     "static/css/main.4f98807f.css",
-    "static/js/main.bb6427df.js"
+    "static/js/main.d2f6959a.js"
   ]
 }
