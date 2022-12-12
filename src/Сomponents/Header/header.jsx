@@ -61,10 +61,10 @@ export const Header = ({ userState, setUserState }) => {
                 <nav className="head-nav">
                     <div className="head-logo"> <NavLink className="head-logo__link" to="/VirtualReality">Light</NavLink> </div>
                     <ul className="head-nav-buttons">
-                        <li className={window.location.pathname === "/VirtualReality" ? "nav-button button-home button-active" : "nav-button button-home"}>
+                        <li className={window.location.pathname.match("/VirtualReality") ? "nav-button button-home button-active" : "nav-button button-home"}>
                             <NavLink className="nav-button__link" to="/VirtualReality">Home</NavLink>
                         </li>
-                        <li className={window.location.pathname === "/Games" ? "nav-button button-vr-games button-active" : "nav-button button-vr-games"}>
+                        <li className={window.location.pathname.match("/Games") ? "nav-button button-vr-games button-active" : "nav-button button-vr-games"}>
                             <NavLink className="nav-button__link" to="/Games">Games</NavLink>
                         </li>
                         <li className="nav-button button-features">
